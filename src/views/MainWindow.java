@@ -1,11 +1,13 @@
 /*
  * File: MainWindow.java
- * Created Date: 2021-09-24 22:18:18
- * Author: Sallai Andras
- * Github: https://github.com/andteki
+ * Created Date: 2021-09-24 22:21:42
+ * Author: Juhasz Zsolt Attila
+ * Original Project: revehicle
+ * Original Author: Sallai Andras
+ * Github: https://github.com/ZsoltJuhasz
  * -----
- * Last Modified: 2021-09-24
- * Modified By: Sallai Andras
+ * Last Modified: 2021-10-09
+ * Modified By: Juhasz Zsolt Attila
  * -----
  * Copyright (c) 2021 Sallai Andras
  * 
@@ -72,8 +74,7 @@ public class MainWindow extends JFrame {
 
         this.controlPanel.setLayout(new BoxLayout(this.controlPanel, BoxLayout.LINE_AXIS));
         this.controlPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
-        this.controlPanel.add(this.formPanel);
-        this.controlPanel.add(this.buttonPanel);
+        
 
 
 
@@ -115,6 +116,8 @@ public class MainWindow extends JFrame {
         this.vehicleLabel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
         // Az ablak beállításai
+        this.controlPanel.add(this.formPanel);
+        this.controlPanel.add(this.buttonPanel);
         this.add(this.vehicleLabel);
         this.add(this.controlPanel);
         this.add(this.vehicleScrollPane);
