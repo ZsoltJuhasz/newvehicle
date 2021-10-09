@@ -56,14 +56,14 @@ public class MainController {
 
     private void addModellContent() {
         System.out.println("Hozzáadás...");
-        String ordinal = this.mainWindow.ordinalField.getText();
+        String ordinal = this.mainWindow.plateNumberField.getText();
         String brand = this.mainWindow.brandField.getText();
         String year = this.mainWindow.yearField.getText();
         this.mainWindow.vehicleModel.addRow(new Object[] { ordinal, brand, year });
     }
 
     private void setFieldEmpty() {
-        this.mainWindow.ordinalField.setText("");
+        this.mainWindow.plateNumberField.setText("");
         this.mainWindow.brandField.setText("");
         this.mainWindow.yearField.setText("");
     }
