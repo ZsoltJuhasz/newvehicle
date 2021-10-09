@@ -51,19 +51,15 @@ public class MainWindow extends JFrame {
     public JScrollPane vehicleScrollPane;
 
     public MainWindow() {
-
         initGUI();
-
     }
 
     private void initGUI() {
-
         makeControlPanel();
         addEveryLabel();
         addEveryPanel();
         loadVehicleTable();
         setLayout();
-
     }
 
     private void makeControlPanel() {
