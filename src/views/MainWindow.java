@@ -1,7 +1,7 @@
 /*
  * File: MainWindow.java
  * Created Date: 2021-09-24 22:21:42
- * Author: Juhasz Zsolt Attila
+ * Author: Juhasz Zsolt Attila SZOFT 2N
  * Original Project: revehicle
  * Original Author: Sallai Andras
  * Github: https://github.com/ZsoltJuhasz
