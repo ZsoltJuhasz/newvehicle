@@ -28,7 +28,7 @@ public class MainController {
     public MainController(MainWindow mainWindow) {
         this.mainWindow = mainWindow;
         this.loadVehicle = new LoadVehicle();
-        vehicleList();
+        goThroughVehicleList();
 
         // TODO A névtelen metódus tartalmát ki kell szervezni
         // TODO A függvény tartalmát is több részre bontani
@@ -47,7 +47,7 @@ public class MainController {
 
     }
 
-    private void vehicleList() {
+    private void goThroughVehicleList() {
         ArrayList<Vehicle> vehicleList = this.loadVehicle.load();
         for (Vehicle vehicle : vehicleList) {
             this.mainWindow.vehicleModel.addRow(new Object[] { vehicle.ordinal, vehicle.brand, vehicle.year });
